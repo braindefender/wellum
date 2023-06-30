@@ -23,7 +23,7 @@
 ![wellum-layer-base-english](./images/layers/wellum-base-layer-english.jpg)
 ![wellum-layer-base-russian](./images/layers/wellum-base-layer-russian.jpg)
 
-> Не волнуйтесь! Буквы <kbd>Ё</kbd>, <kbd>Ъ</kbd> и <kbd>Щ</kbd> находятся в ALT слое.
+> Не волнуйтесь! Буквы `Ё`, `Ъ` и `Щ` находятся в ALT слое.
 
 ## Слои символов, навигации, цифр и спец. символов
 
@@ -32,13 +32,19 @@
 ![wellum-layer-num](./images/layers/wellum-num-layer.jpg)
 ![wellum-layer-alt](./images/layers/wellum-alt-layer.jpg)
 
+> В слой вынесены русские буквы, которые не влезли в 2×15 сетку, а также различные символы, многие из которых расположены мнемонически:
+> <br/> <br/> Ё = <kbd>Alt</kbd> + Е <br/>Ъ = <kbd>Alt</kbd> + Ь <br/>Щ = <kbd>Alt</kbd> + Ш <br/> ₽ = <kbd>Alt</kbd> + Р
+
+> На месте пробела расположен символ неразрывного пробела, который заставляет делать перенос текста только вместе с соседними от него словами.
+
 ## Игровой слой
 
 ![wellum-layer-game](./images/layers/wellum-game-layer.jpg)
 ![wellum-layer-gfn](./images/layers/wellum-gfn-layer.jpg)
 
 > WASD смещён на одну колонку вправо, чтобы вместить <kbd>Tab</kbd>, <kbd>Shift</kbd> и <kbd>Ctrl</kbd> на почти привычных позициях. Для эргономичных клавиатур это также актуально из-за смещения клавиш по вертикали, где клавиша под средний палец находится выше всего.
-> <br/> <br/> Также, в слое с цифрами помещается два ряда цифр и часто используемые клавиши:
+
+> Также, в слое с цифрами помещается два ряда цифр и часто используемые клавиши:
 > <br/> <br/> `G` → Grenade
 > <br/> `J` → Journal
 > <br/> `I` → Inventory

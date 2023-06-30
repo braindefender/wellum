@@ -2,7 +2,7 @@
 
 # Wellum — клавиатурная раскладка для 36 клавиш
 
-This article is available in 🇬🇧English language.
+[This article is also available in 🇬🇧 English language.](README.md)
 
 ## Термины
 

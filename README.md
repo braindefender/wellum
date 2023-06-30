@@ -14,6 +14,28 @@
 - Hold <kbd>SYM</kbd> to activate the symbols layer.
 - Hold <kbd>NAV</kbd> to activate the navigation layer.
 - Hold <kbd>SYM</kbd> and <kbd>NAV</kbd> together to activate the numbers layer.
+- Hold <kbd>ALT</kbd> to activate the special symbols layer.
+
+## Keyboard layers
+
+### Base layer
+
+![wellum-layer-base-english](./images/layers/wellum-base-layer-english.jpg)
+![wellum-layer-base-russian](./images/layers/wellum-base-layer-russian.jpg)
+
+> Don't worry! Letters <kbd>Ё</kbd>, <kbd>Ъ</kbd> and <kbd>Щ</kbd> are placed on ALT layer.
+
+### Symbols, navigation, numbers and special symbols layers
+
+![wellum-layer-sym](./images/layers/wellum-sym-layer.jpg)
+![wellum-layer-nav](./images/layers/wellum-nav-layer.jpg)
+![wellum-layer-num](./images/layers/wellum-num-layer.jpg)
+![wellum-layer-alt](./images/layers/wellum-alt-layer.jpg)
+
+### Gaming layer
+
+![wellum-layer-game](./images/layers/wellum-game-layer.jpg)
+![wellum-layer-gfn](./images/layers/wellum-gfn-layer.jpg)
 
 ## How One-shot Sticky Modifiers work
 

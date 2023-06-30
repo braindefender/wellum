@@ -4,6 +4,8 @@
 
 [This article is also available in 🇬🇧 English language.](README.md)
 
+![wellum-layer-base-russian](./images/layers/wellum-base-layer-russian.jpg)
+
 ## Термины
 
 - Модификатор: <kbd>Shift</kbd>, <kbd>Ctrl</kbd>, <kbd>Alt</kbd> или <kbd>Gui</kbd>
@@ -14,6 +16,28 @@
 - Удерживайте <kbd>SYM</kbd> чтобы активировать слой символов.
 - Удерживайте <kbd>NAV</kbd> чтобы активировать слой навигации.
 - Удерживайте <kbd>SYM</kbd> и <kbd>NAV</kbd> вместе, чтобы активировать слой с цифрами.
+- Удерживайте <kbd>ALT</kbd> чтобы активировать слой спец. символов.
+
+## Клавиатурные слои
+
+### Базовый слой
+
+![wellum-layer-base-english](./images/layers/wellum-base-layer-english.jpg)
+![wellum-layer-base-russian](./images/layers/wellum-base-layer-russian.jpg)
+
+> Не волнуйтесь! Буквы <kbd>Ё</kbd>, <kbd>Ъ</kbd> и <kbd>Щ</kbd> находятся в ALT слое.
+
+### Слои символов, навигации, цифр и спец. символов
+
+![wellum-layer-sym](./images/layers/wellum-sym-layer.jpg)
+![wellum-layer-nav](./images/layers/wellum-nav-layer.jpg)
+![wellum-layer-num](./images/layers/wellum-num-layer.jpg)
+![wellum-layer-alt](./images/layers/wellum-alt-layer.jpg)
+
+### Игровой слой
+
+![wellum-layer-game](./images/layers/wellum-game-layer.jpg)
+![wellum-layer-gfn](./images/layers/wellum-gfn-layer.jpg)
 
 ## Как работают One-shot Sticky Modifiers.
 

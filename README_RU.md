@@ -20,7 +20,9 @@
 
 ## Клавиатурные слои
 
-### Базовый слой
+<details>
+  <summary>### Базовый слой</summary>
+</details>
 
 ![wellum-layer-base-english](./images/layers/wellum-base-layer-english.jpg)
 ![wellum-layer-base-russian](./images/layers/wellum-base-layer-russian.jpg)

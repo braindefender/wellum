@@ -4,12 +4,34 @@
 
 [Эта статья также доступна на 🇷🇺 Русском языке.](README_RU.md)
 
+![wellum-layer-base-russian](./images/layers/wellum-base-layer-russian.jpg)
+
+## Table of contents
+
+- [About firmware](#about-firmware)
+- [Terms](#terms)
+- [Keyboard layers](#keyboard-layers)
+  - [Base layer](#base-layer)
+  - [Symbols](#symbols)
+  - [Navigation](#navigation)
+  - [Numbers and F-keys](#numbers-and-f-keys)
+  - [Special symbols](#special-symbols)
+- Additional info
+  - [How One-shot Sticky Modifiers work](#how-one-shot-sticky-modifiers-work)
+  - [How Swapper and Tabber work](#how-swapper-and-tabber-work)
+
+## About firmware
+
+The firmware/layout is intended for use with [Universal Layout](https://github.com/braindefender/universal-layout) - a system-wide layout for Windows, Linux, and macOS. On the project page, you can find all the necessary instructions for installing and modifying this layout.
+
+The firmware/layout is based on [callum](https://github.com/callum-oakley/qmk_firmware/tree/master/users/callum) and works on [QMK](https://docs.qmk.fm/), which is designed for wired keyboards. A version for wireless keyboards that work on [ZMK](https://zmk.dev/docs) is currently under development.
+
 ## Terms
 
 - Modifiers: <kbd>Shift</kbd>, <kbd>Ctrl</kbd>, <kbd>Alt</kbd> or <kbd>Gui</kbd>
 - Layer keys: <kbd>SYM</kbd> or <kbd>NAV</kbd>
 
-## Details
+## Keyboard layers
 
 - Hold <kbd>SYM</kbd> to activate the symbols layer.
 - Hold <kbd>NAV</kbd> to activate the navigation layer.
@@ -21,19 +43,68 @@
 ![wellum-layer-base-english](./images/layers/wellum-base-layer-english.jpg)
 ![wellum-layer-base-russian](./images/layers/wellum-base-layer-russian.jpg)
 
-> Don't worry! Letters <kbd>Ё</kbd>, <kbd>Ъ</kbd> and <kbd>Щ</kbd> are placed on ALT layer.
+> Don't worry! Letters <kbd>Ё</kbd>, <kbd>Ъ</kbd> and <kbd>Щ</kbd> are placed on [ALT layer](#special-symbols).
 
-## Symbols, navigation, numbers and special symbols layers
+## Symbols
 
 ![wellum-layer-sym](./images/layers/wellum-sym-layer.jpg)
+
+## Navigation
+
 ![wellum-layer-nav](./images/layers/wellum-nav-layer.jpg)
+
+On the left half, there are the <kbd>Game Layer</kbd>, <kbd>Print Screen</kbd>, and various macros:
+
+|                    Key | Macro                                                                     |
+| ---------------------: | ------------------------------------------------------------------------- |
+|      <kbd>SW TAB</kbd> | [Swapper](#how-swapper-and-tabber-work) (for windows in Windows/Linux)    |
+|      <kbd>SW WIN</kbd> | [Tabber](#how-swapper-and-tabber-work) (for tabs in browser and terminal) |
+|    <kbd>PREV TAB</kbd> | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>                       |
+|    <kbd>NEXT TAB</kbd> | <kbd>Ctrl</kbd> + <kbd>Tab</kbd>                                          |
+|  <kbd>SPACE LEFT</kbd> | <kbd>Ctrl</kbd> + <kbd>Gui</kbd> + <kbd>Left</kbd>                        |
+| <kbd>SPACE RIGHT</kbd> | <kbd>Ctrl</kbd> + <kbd>Gui</kbd> + <kbd>Right</kbd>                       |
+
+On the right half, there are Vim-like arrow keys, Home/End (on top), and Page Up/Down (on the bottom).
+
+The <kbd>Escape</kbd>, <kbd>Enter</kbd> and <kbd>Tab</kbd> keys are duplicated on both halves, which is convenient for use in various software and editors where only the left hand is on the keyboard while the right hand holds the mouse.
+
+## Numbers and F-keys
+
 ![wellum-layer-num](./images/layers/wellum-num-layer.jpg)
+
+## Special symbols
+
 ![wellum-layer-alt](./images/layers/wellum-alt-layer.jpg)
+
+The Russian letters that did not fit into the 2x15 grid and various symbols, many of which are arranged mnemonically, are placed in a layer:
+
+|       Symbol | Input method                  |
+| -----------: | ----------------------------- |
+| <kbd>Ё</kbd> | <kbd>Alt</kbd> + <kbd>Е</kbd> |
+| <kbd>Ъ</kbd> | <kbd>Alt</kbd> + <kbd>Ь</kbd> |
+| <kbd>Щ</kbd> | <kbd>Alt</kbd> + <kbd>Ш</kbd> |
+| <kbd>₽</kbd> | <kbd>Alt</kbd> + <kbd>Р</kbd> |
+
+In place of the **space** is located the **non-breaking space** character, which prevents text from being divided between lines only at that point, and instead forces the entire group of adjacent words to move to the next line together.
+
+The ALT layer also includes `<` `>` `«` `»` `[` `]` (available for both languages) and the `=>` ligature, which is convenient for developers.
 
 ## Gaming layer
 
 ![wellum-layer-game](./images/layers/wellum-game-layer.jpg)
 ![wellum-layer-gfn](./images/layers/wellum-gfn-layer.jpg)
+
+WASD is shifted one column to the right to accommodate <kbd>Tab</kbd>, <kbd>Shift</kbd>, and <kbd>Ctrl</kbd> in almost familiar positions. This is also relevant for ergonomic keyboards due to the vertical offset of the keys, where the key under the middle finger is higher than the others.
+
+Additionally, the layer with numbers contains two rows of digits and frequently used gaming keys:
+
+|          Key | Description |
+| -----------: | ----------- |
+| <kbd>G</kbd> | Grenade     |
+| <kbd>J</kbd> | Journal     |
+| <kbd>I</kbd> | Inventory   |
+| <kbd>M</kbd> | Map         |
+| <kbd>T</kbd> | Chat        |
 
 ## How One-shot Sticky Modifiers work
 
@@ -67,5 +138,4 @@ Moreover, if you hold down the modifier keys but release the layer key, the modi
 The Swapper key <kbd>NAV+W</kbd> and the Tabber key <kbd>NAV+Q</kbd> are macros for <kbd>Alt+Tab</kbd> and <kbd>Ctrl+Tab</kbd>, respectively. When pressed, they leave the Alt or Ctrl modifiers held down.
 Thus, by pressing <kbd>W</kbd> and <kbd>Q</kbd> again, you can switch between windows in Windows, tabs in a Web Browser, or Terminal.
 
-// TODO: not implemented
-These keys are compatible with the <kbd>Shift</kbd> modifier, which allows you to reverse the direction of window/tab switching.
+> _TODO: not implemented_ <br> These keys are compatible with the <kbd>Shift</kbd> modifier, which allows you to reverse the direction of window/tab switching.

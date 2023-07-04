@@ -19,6 +19,7 @@
 - Additional info
   - [How One-shot Sticky Modifiers work](#how-one-shot-sticky-modifiers-work)
   - [How Swapper and Tabber work](#how-swapper-and-tabber-work)
+- [How to install](#how-to-install)
 
 ## About firmware
 
@@ -140,3 +141,11 @@ The Swapper key <kbd>NAV+W</kbd> and the Tabber key <kbd>NAV+Q</kbd> are macros 
 Thus, by pressing <kbd>W</kbd> and <kbd>Q</kbd> again, you can switch between windows in Windows, tabs in a Web Browser, or Terminal.
 
 These keys are compatible with the <kbd>Shift</kbd> modifier, which allows you to reverse the direction of window/tab switching.
+
+## How to install
+
+To build the firmware, you will need the latest version of [QMK](https://github.com/qmk/qmk_firmware/).
+
+- Copy the contents of the `firmware` folder to the `<your_keyboard>/keymaps/wellum` folder.
+- Build and flash with the standard build/flash command for your keyboard, specifying the ':wellum' variant.
+- Install [Universal Layout](https://github.com/braindefender/universal-layout) for your OS.

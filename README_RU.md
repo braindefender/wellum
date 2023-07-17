@@ -42,8 +42,7 @@
 
 ## Базовый слой
 
-![wellum-layer-base-english](./images/layers/wellum-base-layer-english.jpg)
-![wellum-layer-base-russian](./images/layers/wellum-base-layer-russian.jpg)
+![wellum-layer-base](./images/layers/wellum-base-layer.jpg)
 
 > Не волнуйтесь! Буквы `Ё`, `Ъ` и `Щ` находятся в [ALT слое](#специальные-символы).
 

@@ -42,8 +42,7 @@ The firmware/layout is based on [callum](https://github.com/callum-oakley/qmk_fi
 
 ## Base layer
 
-![wellum-layer-base-english](./images/layers/wellum-base-layer-english.jpg)
-![wellum-layer-base-russian](./images/layers/wellum-base-layer-russian.jpg)
+![wellum-layer-base](./images/layers/wellum-base-layer.jpg)
 
 > Don't worry! Letters <kbd>Ё</kbd>, <kbd>Ъ</kbd> and <kbd>Щ</kbd> are placed on [ALT layer](#special-symbols).
 

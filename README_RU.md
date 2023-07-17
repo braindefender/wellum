@@ -4,7 +4,7 @@
 
 [This article is also available in 🇬🇧 English language.](README.md)
 
-![wellum-layer-base-russian](./images/layers/wellum-base-layer-russian.jpg)
+![wellum-layout-preview](./images/wellum-layout-preview.jpg)
 
 ## Содержание
 
@@ -16,6 +16,7 @@
   - [Навигация](#навигация)
   - [Цифры и F-клавиши](#цифры-и-f-клавиши)
   - [Специальные символы](#специальные-символы)
+  - [Игровой слой](#игровой-слой)
 - Дополнительно
   - [Как работают One-shot Sticky Modifiers](#как-работают-one-shot-sticky-modifiers)
   - [Как работает Swapper и Tabber](#как-работает-swapper-и-tabber)

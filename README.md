@@ -4,7 +4,7 @@
 
 [Эта статья также доступна на 🇷🇺 Русском языке.](README_RU.md)
 
-![wellum-layout-preview](./images/wellum-layout-preview.jpg)
+![wellum-preview](./images/wellum-preview.jpg)
 
 ## Table of contents
 
@@ -42,17 +42,17 @@ The firmware/layout is based on [callum](https://github.com/callum-oakley/qmk_fi
 
 ## Base layer
 
-![wellum-layer-base](./images/layers/wellum-base-layer.jpg)
+![wellum-layer-base](./images/layers/wellum-layer-base.jpg)
 
 > Don't worry! Letters <kbd>Ё</kbd>, <kbd>Ъ</kbd> and <kbd>Щ</kbd> are placed on [ALT layer](#special-symbols).
 
 ## Symbols
 
-![wellum-layer-sym](./images/layers/wellum-sym-layer.jpg)
+![wellum-layer-sym](./images/layers/wellum-layer-sym.jpg)
 
 ## Navigation
 
-![wellum-layer-nav](./images/layers/wellum-nav-layer.jpg)
+![wellum-layer-nav](./images/layers/wellum-layer-nav.jpg)
 
 On the left half, there are the <kbd>Game Layer</kbd>, <kbd>Print Screen</kbd>, and various macros:
 
@@ -71,11 +71,11 @@ The <kbd>Escape</kbd>, <kbd>Enter</kbd> and <kbd>Tab</kbd> keys are duplicated o
 
 ## Numbers and F-keys
 
-![wellum-layer-num](./images/layers/wellum-num-layer.jpg)
+![wellum-layer-num](./images/layers/wellum-layer-num.jpg)
 
 ## Special symbols
 
-![wellum-layer-alt](./images/layers/wellum-alt-layer.jpg)
+![wellum-layer-alt](./images/layers/wellum-layer-alt.jpg)
 
 The Russian letters that did not fit into the 2x15 grid and various symbols, many of which are arranged mnemonically, are placed in a layer:
 
@@ -92,8 +92,8 @@ The ALT layer also includes `<` `>` `«` `»` `[` `]` (available for both langua
 
 ## Gaming layer
 
-![wellum-layer-game](./images/layers/wellum-game-layer.jpg)
-![wellum-layer-gfn](./images/layers/wellum-gfn-layer.jpg)
+![wellum-layer-game](./images/layers/wellum-layer-game.jpg)
+![wellum-layer-gfn](./images/layers/wellum-layer-gfn.jpg)
 
 WASD is shifted one column to the right to accommodate <kbd>Tab</kbd>, <kbd>Shift</kbd>, and <kbd>Ctrl</kbd> in almost familiar positions. This is also relevant for ergonomic keyboards due to the vertical offset of the keys, where the key under the middle finger is higher than the others.
 

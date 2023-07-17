@@ -4,7 +4,7 @@
 
 [This article is also available in 🇬🇧 English language.](README.md)
 
-![wellum-layout-preview](./images/wellum-layout-preview.jpg)
+![wellum-preview](./images/wellum-preview.jpg)
 
 ## Содержание
 
@@ -42,17 +42,17 @@
 
 ## Базовый слой
 
-![wellum-layer-base](./images/layers/wellum-base-layer.jpg)
+![wellum-layer-base](./images/layers/wellum-layer-base.jpg)
 
 > Не волнуйтесь! Буквы `Ё`, `Ъ` и `Щ` находятся в [ALT слое](#специальные-символы).
 
 ## Символы
 
-![wellum-layer-sym](./images/layers/wellum-sym-layer.jpg)
+![wellum-layer-sym](./images/layers/wellum-layer-sym.jpg)
 
 ## Навигация
 
-![wellum-layer-nav](./images/layers/wellum-nav-layer.jpg)
+![wellum-layer-nav](./images/layers/wellum-layer-nav.jpg)
 
 На левой половинке расположены <kbd>Game Layer</kbd>, <kbd>Print Screen</kbd> и различные макросы:
 
@@ -71,11 +71,11 @@
 
 ## Цифры и F-клавиши
 
-![wellum-layer-num](./images/layers/wellum-num-layer.jpg)
+![wellum-layer-num](./images/layers/wellum-layer-num.jpg)
 
 ## Специальные символы
 
-![wellum-layer-alt](./images/layers/wellum-alt-layer.jpg)
+![wellum-layer-alt](./images/layers/wellum-layer-alt.jpg)
 
 В слой вынесены русские буквы, которые не влезли в 2×15 сетку, а также различные символы, многие из которых расположены мнемонически:
 
@@ -92,8 +92,8 @@
 
 ## Игровой слой
 
-![wellum-layer-game](./images/layers/wellum-game-layer.jpg)
-![wellum-layer-gfn](./images/layers/wellum-gfn-layer.jpg)
+![wellum-layer-game](./images/layers/wellum-layer-game.jpg)
+![wellum-layer-gfn](./images/layers/wellum-layer-gfn.jpg)
 
 WASD смещён на одну колонку вправо, чтобы вместить <kbd>Tab</kbd>, <kbd>Shift</kbd> и <kbd>Ctrl</kbd> на почти привычных позициях. Для эргономичных клавиатур это также актуально из-за смещения клавиш по вертикали, где клавиша под средний палец находится выше всего.
 

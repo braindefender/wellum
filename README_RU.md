@@ -45,7 +45,6 @@
 ![wellum-layer-base](./images/layers/wellum-layer-base.jpg)
 
 > [!NOTE]
-> 
 > Не волнуйтесь! Буквы `Ё`, `Ъ` и `Щ` находятся в [ALT слое](#специальные-символы).
 
 ## Символы

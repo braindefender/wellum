@@ -20,7 +20,8 @@
 - Additional info
   - [How One-shot Sticky Modifiers work](#how-one-shot-sticky-modifiers-work)
   - [How Swapper and Tabber work](#how-swapper-and-tabber-work)
-- [How to install](#how-to-install)
+- [How to install?](#how-to-install)
+  - [How to create LAYOUT\_split\_3x5\_3?](#how-to-create-layout_split_3x5_3)
 
 ## About firmware
 
@@ -142,10 +143,68 @@ Thus, by pressing <kbd>W</kbd> and <kbd>Q</kbd> again, you can switch between wi
 
 These keys are compatible with the <kbd>Shift</kbd> modifier, which allows you to reverse the direction of window/tab switching.
 
-## How to install
+## How to install?
 
 To build the firmware, you will need the latest version of [QMK](https://github.com/qmk/qmk_firmware/).
 
 - Copy the contents of the `firmware` folder to the `<your_keyboard>/keymaps/wellum` folder.
 - Build and flash with the standard build/flash command for your keyboard, specifying the ':wellum' variant.
+- If `LAYOUT_split_3x5_3` is not defined for your keyboard in `info.json`, you need to create it yourself. Follow the instructions below.
 - Install [Universal Layout](https://github.com/braindefender/universal-layout) for your OS.
+
+## How to create LAYOUT_split_3x5_3? 
+
+For the firmware build, `keymap.c` relies on `LAYOUT_split_3x5_3`, but it may not be defined for most keyboards. 
+To fix this, you need to duplicate your current `LAYOUT_split_***_*` and name it `LAYOUT_split_3x5_3`. 
+After that, you need to remove the keys that do not fit into the new grid. 
+For example, for `LAYOUT_split_3x6_3`, you need to remove the rows corresponding to the far left and far right columns. 
+In total, the `layout` array should have exactly **36 elements**.
+
+```jsonc
+"LAYOUT_split_3x6_3": {
+    "layout": [
+        { "matrix": [0, 0], "x": 0, "y": 0.25 },  // far left, delete
+        { "matrix": [0, 1], "x": 1, "y": 0.25 },
+        { "matrix": [0, 2], "x": 2, "y": 0.125 },
+        { "matrix": [0, 3], "x": 3, "y": 0 },
+        { "matrix": [0, 4], "x": 4, "y": 0.125 },
+        { "matrix": [0, 5], "x": 5, "y": 0.25 },
+        { "matrix": [4, 0], "x": 8, "y": 0.25 },
+        { "matrix": [4, 1], "x": 9, "y": 0.125 },
+        { "matrix": [4, 2], "x": 10, "y": 0 },
+        { "matrix": [4, 3], "x": 11, "y": 0.125 },
+        { "matrix": [4, 4], "x": 12, "y": 0.25 },
+        { "matrix": [4, 5], "x": 13, "y": 0.25 }, // far right, delete
+        { "matrix": [1, 0], "x": 0, "y": 1.25 },  // far left, delete
+        { "matrix": [1, 1], "x": 1, "y": 1.25 },
+        { "matrix": [1, 2], "x": 2, "y": 1.125 },
+        { "matrix": [1, 3], "x": 3, "y": 1 },
+        { "matrix": [1, 4], "x": 4, "y": 1.125 },
+        { "matrix": [1, 5], "x": 5, "y": 1.25 },
+        { "matrix": [5, 0], "x": 8, "y": 1.25 },
+        { "matrix": [5, 1], "x": 9, "y": 1.125 },
+        { "matrix": [5, 2], "x": 10, "y": 1 },
+        { "matrix": [5, 3], "x": 11, "y": 1.125 },
+        { "matrix": [5, 4], "x": 12, "y": 1.25 },
+        { "matrix": [5, 5], "x": 13, "y": 1.25 }, // far right, delete
+        { "matrix": [2, 0], "x": 0, "y": 2.25 },  // far left, delete
+        { "matrix": [2, 1], "x": 1, "y": 2.25 },
+        { "matrix": [2, 2], "x": 2, "y": 2.125 },
+        { "matrix": [2, 3], "x": 3, "y": 2 },
+        { "matrix": [2, 4], "x": 4, "y": 2.125 },
+        { "matrix": [2, 5], "x": 5, "y": 2.25 },
+        { "matrix": [6, 0], "x": 8, "y": 2.25 },
+        { "matrix": [6, 1], "x": 9, "y": 2.125 },
+        { "matrix": [6, 2], "x": 10, "y": 2 },
+        { "matrix": [6, 3], "x": 11, "y": 2.125 },
+        { "matrix": [6, 4], "x": 12, "y": 2.25 },
+        { "matrix": [6, 5], "x": 13, "y": 2.25 }, // far right, delete
+        { "matrix": [3, 0], "x": 3.5, "y": 3.25 },
+        { "matrix": [3, 1], "x": 4.5, "y": 3.5 },
+        { "matrix": [3, 2], "x": 5.5, "y": 3.75 },
+        { "matrix": [7, 0], "x": 7.5, "y": 3.75 },
+        { "matrix": [7, 1], "x": 8.5, "y": 3.5 },
+        { "matrix": [7, 2], "x": 9.5, "y": 3.25 }
+    ]
+}
+```

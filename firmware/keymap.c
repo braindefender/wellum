@@ -61,10 +61,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_GFN] = LAYOUT_split_3x5_3(
-        KC_5,    KC_1,    KC_2,    KC_3,    KC_4,           KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
-        KC_0,    KC_6,    KC_7,    KC_8,    KC_9,           KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,
-        KC_G,    KC_J,    KC_I,    KC_M,    KC_T,           KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,
-                          KC_ESC,  KC_ENT, _______,        _______, _______, _______
+        KC_5,    KC_1,    KC_2,    KC_3,    KC_4,           KC_NONE,  KC_NONE, KC_UP,   KC_NONE,  KC_TAB,
+        KC_0,    KC_6,    KC_7,    KC_8,    KC_9,           KC_NONE,  KC_LEFT, KC_DOWN, KC_RGHT,  KC_RSFT,
+        KC_G,    KC_J,    KC_I,    KC_M,    KC_T,           KC_NONE,  KC_NONE, KC_NONE, KC_NONE,  KC_RCTL,
+                          KC_ESC,  KC_ENT, _______,         _______, _______, _______
     ),
 
     [_SYM] = LAYOUT_split_3x5_3(
@@ -77,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_NAV] = LAYOUT_split_3x5_3(
         SW_TAB,  SW_WIN,  TAB_L,   TAB_R,   KC_ESC,         KC_ESC,  KC_HOME, KC_END,  KC_BSPC, KC_DEL,
         OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,         KC_ENT,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,
-        SPACE_L, SPACE_R, DF(_GAM), KC_PSCR, KC_TAB,        KC_TAB,  KC_PGUP, KC_PGDN, XXXXXXX, XXXXXXX,
+        SPACE_L, SPACE_R, DF(_GAM), KC_PSCR, KC_TAB,        KC_TAB,  KC_PGUP, KC_PGDN, KC_QUOT, KC_NUM,
                           _______, _______, _______,        _______, _______, _______
     ),
 

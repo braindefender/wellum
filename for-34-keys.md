@@ -33,14 +33,14 @@
 
 На левой половинке расположены <kbd>Game Layer</kbd>, <kbd>Print Screen</kbd> и различные макросы:
 
-|                Клавиша | Макрос                                                                        |
-| ---------------------: | :---------------------------------------------------------------------------- |
-|      <kbd>SW TAB</kbd> | [Swapper](#как-работает-swapper-и-tabber) (для окон в Windows/Linux)          |
-|      <kbd>SW WIN</kbd> | [Tabber](#как-работает-swapper-и-tabber) (для вкладок в браузере и терминале) |
-|    <kbd>PREV TAB</kbd> | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>                           |
-|    <kbd>NEXT TAB</kbd> | <kbd>Ctrl</kbd> + <kbd>Tab</kbd>                                              |
-|  <kbd>SPACE LEFT</kbd> | <kbd>Ctrl</kbd> + <kbd>Gui</kbd> + <kbd>Left</kbd>                            |
-| <kbd>SPACE RIGHT</kbd> | <kbd>Ctrl</kbd> + <kbd>Gui</kbd> + <kbd>Right</kbd>                           |
+|                Клавиша | Макрос                                                                                   |
+| ---------------------: | :--------------------------------------------------------------------------------------- |
+|      <kbd>SW TAB</kbd> | [Swapper](./README.md#как-работает-swapper-и-tabber) (для окон в Windows/Linux)          |
+|      <kbd>SW WIN</kbd> | [Tabber](./README.md#как-работает-swapper-и-tabber) (для вкладок в браузере и терминале) |
+|    <kbd>PREV TAB</kbd> | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>                                      |
+|    <kbd>NEXT TAB</kbd> | <kbd>Ctrl</kbd> + <kbd>Tab</kbd>                                                         |
+|  <kbd>SPACE LEFT</kbd> | <kbd>Ctrl</kbd> + <kbd>Gui</kbd> + <kbd>Left</kbd>                                       |
+| <kbd>SPACE RIGHT</kbd> | <kbd>Ctrl</kbd> + <kbd>Gui</kbd> + <kbd>Right</kbd>                                      |
 
 На правой половинке расположены vim-подобные стрелочки, Home/End (сверху) и Page Up/Down (снизу).
 

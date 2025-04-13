@@ -1,0 +1,5 @@
+config SHIELD_WELLUM34_LEFT
+	def_bool $(shields_list_contains,wellum34_left)
+
+config SHIELD_WELLUM34_RIGHT
+	def_bool $(shields_list_contains,wellum34_right)

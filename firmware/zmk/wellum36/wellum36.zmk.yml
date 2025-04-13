@@ -1,0 +1,12 @@
+file_format: "1"
+id: wellum36
+name: Wellum36
+type: shield
+url: https://github.com/braindefender/wellum
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - wellum36_left
+  - wellum36_right

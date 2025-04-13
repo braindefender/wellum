@@ -80,7 +80,7 @@
 ## Игровой слой
 
 ![](./images/wellum36/wellum-layer-game.jpg)
-![](./images/wellum36/wellum-layer-game-func.jpg)
+![](./images/wellum36/wellum-layer-game-fn.jpg)
 
 WASD смещён на одну колонку вправо, чтобы вместить <kbd>Tab</kbd>, <kbd>Shift</kbd> и <kbd>Ctrl</kbd> на почти привычных позициях. Для эргономичных клавиатур это также актуально из-за смещения клавиш по вертикали, где клавиша под средний палец находится выше всего.
 

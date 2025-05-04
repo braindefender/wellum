@@ -11,10 +11,11 @@
 #define DEF 0
 #define GAM 1
 #define GFN 2
-#define NAV 3
-#define SYM 4
+#define SYM 3
+#define NAV 4
 #define NUM 5
-#define CMD 6
+#define ALT 6
+#define CMD 7
 
 #define MEH(key) LS(LC(LA(key)))
 
@@ -202,7 +203,7 @@ _ Z          _ X          _ C          _ V         _ B             _ N          
 _ TAB        _ Q          _ W          _ E         _ R             ___          ___          _ UP         ___          _ TAB
 _ LSFT       _ A          _ S          _ D         _ F             ___          _ LEFT       _ DOWN       _ RIGHT      _ RSFT
 _ LCTRL      _ Z          _ X          _ C         _ V             ___          ___          ___          ___          _ RCTRL
-                          _ LALT       _ SPACE     &mo GFN         &tog GAM     _ PSCRN      ______
+                          _ LALT       _ SPACE     &mo GFN         &tog GAM     _ SPACE      _ PSCRN
             >;
         };
 
@@ -211,7 +212,16 @@ _ LCTRL      _ Z          _ X          _ C         _ V             ___          
 _ N5         _ N1         _ N2         _ N3        _ N4            _ KP_NUM     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR_ALL
 _ N0         _ N6         _ N7         _ N8        _ N9            ___          ___          ___          ___          ___
 _ G          _ J          _ I          _ M         _ T             ___          ___          ___          &sys_reset   &bootloader
-                          _ ESC        _ RET       ______          ______       ______       ___
+                          _ ESC        _ RET       ______          ______       ______       ______
+            >;
+        };
+
+        sym_layer {
+            bindings = <
+_ N1         _ N2         _ N3         _ N4        _ N5            _ N6         _ N7         _ N8         _ N9         _ N0
+_ SEMI       _ GRV        _ SQT        _ DQT       _ MINUS         _ PLUS       &cm_sft      &cm_ctrl     &cm_alt      &cm_gui
+_ BSL        ___          _ LS(LBKT)   _ LBKT      _ UNDER         _ EQUAL      _ RBKT       _ LS(RBKT)   _ PIP        _ BSLH
+                          ______       ______      ______          ______       ______       ______
             >;
         };
 
@@ -224,21 +234,21 @@ _ PSPC       _ NSPC       &tog GAM     _ PSCRN     _ TAB           _ TAB        
             >;
         };
 
-        sym_layer {
-            bindings = <
-_ N1         _ N2         _ N3         _ N4        _ N5            _ N6         _ N7         _ N8         _ N9         _ N0
-_ SEMI       _ GRV        _ SQT        _ DQT       _ MINUS         _ PLUS       &cm_sft      &cm_ctrl     &cm_alt      &cm_gui
-_ BSL        ___          _ LS(LBKT)   _ LBKT      _ UNDER         _ EQUAL      _ RBKT       _ LS(RBKT)   _ PIP        _ BSLH
-                          ______       ______      ______          ______       ______       _ RALT
-            >;
-        };
-
         num_layer {
             bindings = <
 _ KP_N1      _ KP_N2      _ KP_N3      _ KP_N4     _ KP_N5         _ KP_N6      _ KP_N7      _ KP_N8      _ KP_N9      _ KP_N0
 &cm_gui      &cm_alt      &cm_ctrl     &cm_sft     _ F11           _ F12        &cm_sft      &cm_ctrl     &cm_alt       &cm_gui
 _ F1         _ F2         _ F3         _ F4        _ F5            _ F6         _ F7         _ F8         _ F9         _ F10
                           ______       ______      ______          ______       ______       ______
+            >;
+        };
+
+        alt_layer {
+            bindings = <
+_ RA(Q)      _ RA(W)      _ RA(E)      _ RA(R)     _ RA(T)         _ RA(Y)      _ RA(U)      _ RA(I)      _ RA(O)      _ RA(P)
+_ RA(A)      _ RA(S)      _ RA(D)      _ RA(F)     _ RA(G)         _ RA(H)      _ RA(J)      _ RA(K)      _ RA(L)      _ RA(SEMI)
+_ RA(Z)      _ RA(X)      _ RA(C)      _ RA(V)     _ RA(B)         _ RA(N)      _ RA(M)      _ RA(COMMA)  _ RA(DOT)    _ RA(FSLH)
+                          ______       _ NBSP      _ LSHFT         ______       ______       ______
             >;
         };
 

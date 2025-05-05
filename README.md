@@ -18,17 +18,20 @@
 
 ## О прошивке
 
-Прошивка/раскладка предназначена для использования с [Universal Layout](https://github.com/braindefender/universal-layout) — системной раскладкой для Windows, Linux и macOS. На странице проекта можно найти все необходимые инструкции по установке и модификации этой раскладки.
+Прошивка/раскладка предназначена для использования с [Universal Layout](https://github.com/braindefender/universal-layout) — системной раскладкой для Windows, Linux и macOS. На странице проекта можно найти все необходимые инструкции по установке и модификации этой раскладки.
 
 Прошивка/раскладка основана на [callum](https://github.com/callum-oakley/qmk_firmware/tree/master/users/callum).
-Версия `firmware/qmk` работает на [QMK](https://docs.qmk.fm/) и предназначена для проводных клавиатур.
+
+Версия `firmware/qmk` работает на [QMK](https://docs.qmk.fm/) и предназначена для проводных клавиатур.<br>
 Версия `firmware/zmk` работает на [ZMK](https://zmk.dev/docs) и предназначена для беспроводных клавиатур.
 
 ## Термины
 
 - Модификатор: <kbd>Shift</kbd>, <kbd>Ctrl</kbd>, <kbd>Alt</kbd> или <kbd>Gui</kbd>
-- Клавиши слоя: <kbd>SYM</kbd> или <kbd>NAV</kbd>
-- Смена языка: <kbd>LANG</kbd> на базовом слое (или на слое NAV, для версии с 34 клавишами)
+- Клавиши слоя: <kbd>SYM</kbd>, <kbd>NAV</kbd>, <kbd>ALT</kbd>, <kbd>CMD</kbd>
+- Смена языка: <kbd>LANG</kbd> на базовом слое (или на слое <kbd>NAV</kbd>, для версии с 34 клавишами)
+
+> Клавиша `LANG` по сути, является клавишей Caps Lock. В системной раскладке Universal Layout, Caps Lock переключает между внутренними слоями EN и RU. При этом, в самой системе переключения языка/раскладки не происходит!
 
 ## Раскладки
 

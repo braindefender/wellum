@@ -219,7 +219,7 @@ _ G          _ J          _ I          _ M         _ T             _ KP_NUM     
 
         sym_layer {
             bindings = <
-_ N1         _ N2         _ N3         _ N4        _ N5            _ N6         _ N7         _ N8         _ N9         _ N0
+_ EXCL       _ AT_SIGN    _ HASH       _ DOLLAR    _ PERCENT       _ CARET      _ AMPERSAND  _ STAR       _ LPAR       _ RPAR
 _ SEMI       _ GRV        _ SQT        _ DQT       _ MINUS         _ PLUS       &cm_sft      &cm_ctrl     &cm_alt      &cm_gui
 _ BSL        ___          _ LS(LBKT)   _ LBKT      _ UNDER         _ EQUAL      _ RBKT       _ LS(RBKT)   _ PIP        _ BSLH
                           ______       ______      ______          ______       ______       ______

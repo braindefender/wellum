@@ -1,0 +1,5 @@
+include:
+  - board: nice_nano_v2
+    shield: wellum36_left
+  - board: nice_nano_v2
+    shield: wellum36_right

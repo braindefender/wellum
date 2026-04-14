@@ -1,21 +1,21 @@
-## Как сделать LAYOUT_split_3x5_2 или LAYOUT_split_3x5_3?
+## How to make LAYOUT_split_3x5_2 or LAYOUT_split_3x5_3?
 
-`keymap.c` опирается на  `LAYOUT_split_3x5_2` для wellum34 и `LAYOUT_split_3x5_3` для wellum36 соответственно.
+`keymap.c` relies on `LAYOUT_split_3x5_2` for wellum34 and `LAYOUT_split_3x5_3` for wellum36 respectively.
 
-Для большинства клавиатур он может быть не определён. Чтобы это исправить нужно продублировать ваш текущий `LAYOUT_split_***_*`, после чего вычистить оттуда клавиши, не попадающие в новую сетку.
+For most keyboards that has bigger size, it may not be defined. To fix this, you need to duplicate your current `LAYOUT_split_***_*`, then remove keys from it that do not fit into the new grid.
 
-К примеру, для `LAYOUT_split_3x6_3` нужно убрать строки, соответствующие крайним левым и крайним правым столбцам.
-Для `LAYOUT_split_3x6_2` также понадобится убрать элементы, соответствующие клавишам для большого пальца.
+For example, for `LAYOUT_split_3x6_3`, you need to remove rows corresponding to the extreme left and extreme right columns.
+For `LAYOUT_split_3x6_2`, you will also need to remove elements corresponding to the thumb keys.
 
-Всего, в массиве `layout` должно остаться ровно **34 элемента** для wellum34 и **36 элементов** для wellum36.
+In total, the `layout` array should have exactly **34 elements** for wellum34 and **36 elements** for wellum36.
 
 <details>
-  <summary>Пример</summary>
+  <summary>Example</summary>
 
   ```jsonc
   "LAYOUT_split_3x6_3": {
     "layout": [
-      { "matrix": [0, 0], "x": 0, "y": 0.25 },  // крайний левый, удалить
+      { "matrix": [0, 0], "x": 0, "y": 0.25 },  // extreme left, delete
       { "matrix": [0, 1], "x": 1, "y": 0.25 },
       { "matrix": [0, 2], "x": 2, "y": 0.125 },
       { "matrix": [0, 3], "x": 3, "y": 0 },
@@ -26,8 +26,8 @@
       { "matrix": [4, 2], "x": 10, "y": 0 },
       { "matrix": [4, 3], "x": 11, "y": 0.125 },
       { "matrix": [4, 4], "x": 12, "y": 0.25 },
-      { "matrix": [4, 5], "x": 13, "y": 0.25 }, // крайний правый, удалить
-      { "matrix": [1, 0], "x": 0, "y": 1.25 },  // крайний левый, удалить
+      { "matrix": [4, 5], "x": 13, "y": 0.25 }, // extreme right, delete
+      { "matrix": [1, 0], "x": 0, "y": 1.25 },  // extreme left, delete
       { "matrix": [1, 1], "x": 1, "y": 1.25 },
       { "matrix": [1, 2], "x": 2, "y": 1.125 },
       { "matrix": [1, 3], "x": 3, "y": 1 },
@@ -38,8 +38,8 @@
       { "matrix": [5, 2], "x": 10, "y": 1 },
       { "matrix": [5, 3], "x": 11, "y": 1.125 },
       { "matrix": [5, 4], "x": 12, "y": 1.25 },
-      { "matrix": [5, 5], "x": 13, "y": 1.25 }, // крайний правый, удалить
-      { "matrix": [2, 0], "x": 0, "y": 2.25 },  // крайний левый, удалить
+      { "matrix": [5, 5], "x": 13, "y": 1.25 }, // extreme right, delete
+      { "matrix": [2, 0], "x": 0, "y": 2.25 },  // extreme left, delete
       { "matrix": [2, 1], "x": 1, "y": 2.25 },
       { "matrix": [2, 2], "x": 2, "y": 2.125 },
       { "matrix": [2, 3], "x": 3, "y": 2 },
@@ -50,7 +50,7 @@
       { "matrix": [6, 2], "x": 10, "y": 2 },
       { "matrix": [6, 3], "x": 11, "y": 2.125 },
       { "matrix": [6, 4], "x": 12, "y": 2.25 },
-      { "matrix": [6, 5], "x": 13, "y": 2.25 }, // крайний правый, удалить
+      { "matrix": [6, 5], "x": 13, "y": 2.25 }, // extreme right, delete
       { "matrix": [3, 0], "x": 3.5, "y": 3.25 },
       { "matrix": [3, 1], "x": 4.5, "y": 3.5 },
       { "matrix": [3, 2], "x": 5.5, "y": 3.75 },

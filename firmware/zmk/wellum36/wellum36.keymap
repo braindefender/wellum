@@ -92,6 +92,7 @@
                 &macro_param_1to1 &kp PARAM_1
             &macro_pause_for_release
             &macro_tap
+                &macro_param_1to1
                 &m_release_key_twice PARAM_1
         )
 
